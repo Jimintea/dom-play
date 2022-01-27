@@ -1,31 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
  <head>
-     <title>Title Goes Here</title>
+     <title>DOM Play</title>
   <meta charset="utf-8" />
   <meta name="robots" content="noindex,nofollow" />
   <meta name="viewport" content="width=device-width" />
   <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="css/nav.css" />
+  <style>
+   /* 
+    div#play span {
+      background-color: yellow;
+    }
+  */
+
+
+  </style>
  </head>
  <body>
      <header>
-     <h1>Title Goes Here</h1>
-        <nav class="topnav" id="myTopnav">
-            <a href="index.html" class="active">Home</a>
-            <a href="https://html-only.jimintea.repl.co/" target="_blank">Link Goes Here</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-        </nav>
+     <h1>DOM Play</h1>
      </header>
-     
-   <main class="wrapper">
-  <p>Content Goes Here</p>
+     <main class="wrapper">
+    <p>This page uses JavaScript data attributes and a NodeList to highlight actors in a play by clicking on the name of the actor</p>
+    <h2>Act I, Scene 1</h2>
+    <h2>Verona. A public place.</h2> 
+    <div id="play">
+    <p><span data-actor="abraham">Abraham: Do you bite your thumb at us, sir?</span></p>
+    <p><span data-actor="sampson">Sampson: I do bite my thumb, sir.</span></p>
+    <p><span data-actor="abraham">Abraham: Do you bite your thumb at us, sir?</span></p>
+    <p><span data-actor="sampson">Sampson: [Aside to Gregory] Is the law of our side, if I say ay?</span></p>
+    <p><span data-actor="gregory">Gregory: No.</span></p>
+    <p><span data-actor="sampson">Sampson: No, sir, I do not bite my thumb at you, sir, but I bite my thumb, sir.</span></p>
+    <p><span data-actor="gregory">Gregory: Do you quarrel, sir?</span></p>
+    <p><span data-actor="abraham">Abraham: Quarrel sir! no, sir.</span></p>
+    <p><span data-actor="sampson">Sampson: If you do, sir, I am for you: I serve as good a man as you.</span></p>
+    <p><span data-actor="abraham">Abraham. No better.</span></p>
+    <p><span data-actor="sampson">Sampson: Well, sir..</span></p>
+    <p><span data-actor="gregory">Gregory: Say 'better:' here comes one of my master's kinsmen.</span></p>
+    <p><span data-actor="sampson">Sampson: Yes, better, sir.</span></p>
+    <p><span data-actor="abraham">Abraham: You lie.</span></p>
+    <p><span data-actor="sampson">Sampson: Draw, if you be men. Gregory, remember thy swashing blow.</span></p>
+    <p>[They fight]</p>
+  </div>
      <footer>
-      <p><small>&copy; 2021 by 
+      <p><small>&copy; 2022 by 
           Taylor Cha, All Rights Reserved ~ 
           <a id="html-checker" href="#">Check HTML</a> ~ 
           <a id="css-checker" href="#">Check CSS</a></small>
      </p>
     </footer>
   </main>
+  <script>
+      
+    //document.querySelector('span.hamlet').style.backgroundColor = "yellow";
+  </script>
 <script src="js/main.js"></script>
+<script src="js/dom-play.js"></script>
+</body>
+</html>
